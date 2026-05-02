@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -151,20 +150,10 @@ export function HomeSearch() {
 
   return (
     <>
-      {/* Logo */}
-      <Image
-        src="/logo.svg"
-        alt="Packrun"
-        width={129}
-        height={91}
-        className="w-20 sm:w-24 lg:w-28 h-auto mb-10 select-none brightness-0 dark:brightness-100"
-        priority
-      />
-
       {/* Tagline */}
       <div className="text-center mb-8 mt-4">
-        <h1 className="text-base text-foreground">npm for agents</h1>
-        <p className="text-xs text-muted mt-2">MCP-first. Security signals. &lt;50ms globally.</p>
+        <h1 className="text-base text-foreground">An AI-native SDLC platform.</h1>
+        <p className="text-xs text-muted mt-2">Connect . Desgin . Deploy &lt;200ms</p>
       </div>
 
       {/* Command prompt with instant search */}
@@ -180,7 +169,7 @@ export function HomeSearch() {
               onKeyDown={handleKeyDown}
               onFocus={() => query.trim() && setIsOpen(true)}
               className="flex-1 bg-transparent text-foreground ml-2 outline-none placeholder-subtle"
-              placeholder="search packages..."
+              placeholder="Build an app ..."
               spellCheck={false}
               autoComplete="off"
               autoCapitalize="off"
@@ -272,7 +261,7 @@ export function HomeSearch() {
 
       {/* Featured packages */}
       <div className="text-xs mt-6 px-4 text-center">
-        {["next", "react", "drizzle-orm", "hono", "tailwindcss", "typescript", "resend"].map(
+        {["tools", "design", "figma", "aws", "docker", "kubernetes", "resend"].map(
           (pkg, i, arr) => (
             <span key={pkg}>
               <Link

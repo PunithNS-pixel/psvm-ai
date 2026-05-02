@@ -6,8 +6,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://packrun.dev"),
-  title: "packrun.dev - npm for agents",
-  description: "MCP-first npm registry. Security signals and package health in sub-50ms, globally.",
+  title: "PSVM - An AI-native SDLC platform.",
+  description: "connect . Desgin. Deploy <200ms",
   alternates: {
     canonical: "https://packrun.dev",
   },
@@ -23,18 +23,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "packrun.dev - npm for agents",
-    description:
-      "MCP-first npm registry. Security signals and package health in sub-50ms, globally.",
+    title: "PSVM - An AI-native SDLC platform.",
+    description: "connect . Desgin. Deploy <200ms",
     url: "https://packrun.dev",
     siteName: "packrun.dev",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "packrun.dev - npm for agents",
-    description:
-      "MCP-first npm registry. Security signals and package health in sub-50ms, globally.",
+    title: "PSVM - An AI-native SDLC platform.",
+    description: "connect . Desgin. Deploy <200ms",
   },
 };
 
@@ -44,7 +42,7 @@ const websiteJsonLd = {
   "@type": "WebSite",
   name: "packrun.dev",
   url: "https://packrun.dev",
-  description: "MCP-first npm registry. Security signals and package health in sub-50ms, globally.",
+  description: "connect . Desgin. Deploy <200ms",
   potentialAction: {
     "@type": "SearchAction",
     target: {

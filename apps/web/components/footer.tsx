@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -42,23 +41,14 @@ export function Footer() {
       {/* Main Footer Content */}
       <div className="container-page py-8 md:py-10">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 md:gap-10">
-          {/* Logo Column */}
+          {/* Brand Column */}
           <div className="col-span-2 sm:col-span-1">
-            <Link href="/" className="inline-block hover:opacity-80 transition-opacity">
-              <Image
-                src="/logo.svg"
-                alt="Packrun"
-                width={32}
-                height={22}
-                className="brightness-0 dark:brightness-100"
-              />
-            </Link>
             <p className="text-subtle text-xs mt-3 leading-relaxed">
-              MCP-first npm registry.
+              first automative
               <br />
-              Security signals and package
+              Scalable systems
               <br />
-              health for AI agents.
+              deployed through AI agents.
             </p>
           </div>
 
@@ -141,7 +131,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="text-muted text-xs hover:text-foreground transition-colors inline-flex items-center gap-1"
                 >
-                  Midday
+                  PSVM
                   <span className="text-subtle">↗</span>
                 </a>
               </li>
@@ -175,7 +165,7 @@ export function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-border">
         <div className="container-page py-3 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-          <p className="text-subtle">© {new Date().getFullYear()} packrun.dev</p>
+          <p className="text-subtle">© {new Date().getFullYear()} psvm.ai</p>
 
           <div className="flex items-center gap-6">
             {mounted && (
